@@ -1,1 +1,22 @@
-/Users/robinbb/rc/hgrc
+[ui]
+# username = Robin Bate Boerop <moz@shorestreet.com>
+username = Robin Bate Boerop <me@robinbb.com>
+merge = internal:merge
+editor = vim
+ 
+[extensions]
+# fold = ~/foreign_repos/hgfold/fold.py
+convert =
+record =
+mq =
+
+[diff]
+git = 1
+unified = 8
+showfunc = 1
+
+[defaults]
+diff=-p -U 8
+
+[hostfingerprints]
+github.com = d7:12:e9:69:65:dc:f2:36:c8:74:c7:03:7d:c0:b2:24:a9:3b:d2:33
