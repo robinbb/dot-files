@@ -1,0 +1,10 @@
+[user]
+	name = Robin Bate Boerop
+	email = me@robinbb.com
+[github]
+	user = robinbb
+[color]
+	ui = true
+	diff = true
+[push]
+	default = simple
