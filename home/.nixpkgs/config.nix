@@ -1,7 +1,7 @@
 { allowBroken = true ;
   allowUnfree = true ;
 
-  replaceStdenv = { pkgs }: pkgs.allStdenvs.stdenvDarwinPure;
+  # replaceStdenv = { pkgs }: pkgs.allStdenvs.stdenvDarwinPure;
 }
 
 # Old stuff:
