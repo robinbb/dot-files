@@ -1,7 +1,7 @@
 set ru
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=8
+set shiftwidth=2
+set softtabstop=2
 set textwidth=77
 set wrapmargin=77
 set expandtab
@@ -15,3 +15,4 @@ set backupdir=~/.vim/backups
 set undodir=~/.vim/undos
 " set background=light
 " colorscheme solarized
+autocmd filetype crontab setlocal nobackup nowritebackup
