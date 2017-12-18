@@ -10,6 +10,7 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax on
 runtime! plugin/sensible.vim
+set viminfo+=n~/.vim/viminfo
 set directory=~/.vim/swaps
 set backupdir=~/.vim/backups
 set undodir=~/.vim/undos
