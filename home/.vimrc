@@ -14,6 +14,5 @@ set viminfo+=n~/.vim/viminfo
 set directory=~/.vim/swaps
 set backupdir=~/.vim/backups
 set undodir=~/.vim/undos
-" set background=light
-" colorscheme solarized
+colorscheme flattened_dark
 autocmd filetype crontab setlocal nobackup nowritebackup
