@@ -1,0 +1,18 @@
+set ru
+set tabstop=8
+set shiftwidth=2
+set softtabstop=2
+set textwidth=77
+set wrapmargin=77
+set expandtab
+set ignorecase
+set undodir=$XDG_CACHE_HOME/vim/undos
+set directory=$XDG_CACHE_HOME/vim/swaps
+set backupdir=$XDG_CACHE_HOME/vim/backups
+set viminfo+='1000,n$XDG_CACHE_HOME/vim/viminfo
+set runtimepath=$XDG_CONFIG_HOME/vim,$VIMRUNTIME,$XDG_CONFIG_HOME/vim/after
+filetype plugin indent on
+syntax on
+colorscheme flattened_dark
+set background=dark
+autocmd filetype crontab setlocal nobackup nowritebackup
