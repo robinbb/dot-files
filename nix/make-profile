@@ -15,5 +15,5 @@ profile="./profiles/${package_set}"
 export NIX_PATH=nixpkgs="$HOME"/repos/nixpkgs
 nix-env \
   -p "$profile" \
-  -f "$package_set"_packages.nix \
+  -f ./package_sets/"$package_set".nix \
   -i
