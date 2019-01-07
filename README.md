@@ -1,4 +1,4 @@
 # dot-files
 
-Configuration files intended for my $HOME directory, in a format compatible
-with [GNU Stow](http://www.gnu.org/software/stow/).
+Uses [Nix](https://nixos.org/nix/) and
+[GNU Stow](http://www.gnu.org/software/stow/).
