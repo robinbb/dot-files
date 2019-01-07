@@ -1,0 +1,19 @@
+#! /bin/sh
+
+set -xeu
+
+package_set="$1"
+commit="$( cat commits/"$package_set".tip )"
+
+nixpkgs_repo=~/repos/nixpkgs
+cd "$nixpkgs_repo"
+git checkout "$commit"
+cd - > /dev/null
+
+mkdir -p ./profiles
+profile="./profiles/${package_set}"
+export NIX_PATH=nixpkgs="$HOME"/repos/nixpkgs
+nix-env \
+  -p "$profile" \
+  -f "$package_set"_packages.nix \
+  -i
