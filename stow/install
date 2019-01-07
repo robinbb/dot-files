@@ -1,0 +1,7 @@
+#! /bin/sh
+
+set -eu
+
+find . -type d -depth 1 \
+   | sed 's/^..//' \
+   | xargs stow --target=$HOME "$@"
