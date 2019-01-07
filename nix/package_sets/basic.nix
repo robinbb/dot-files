@@ -1,6 +1,6 @@
 with (import <nixpkgs> {});
-import ./00_packages.nix //
-import ./tarsnap_packages.nix //
+import ./00.nix //
+import ./tarsnap.nix //
 { inherit
      dash
      gnupg
