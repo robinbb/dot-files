@@ -2,4 +2,7 @@
 
 set -eu
 
-./make robinbb
+nix-env \
+  -f ./package_sets/robinbb.nix \
+  "$@" \
+  -i

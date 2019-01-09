@@ -1,6 +1,25 @@
 #! /bin/sh
 
-set -eu
+set -xeu
 
-profile="./profiles/$1"
-./make "$1" -p "$profile"
+package_set="$1"
+shift
+commit="$1"
+shift
+
+nix_expr="
+  let pkgs = builtins.fetchGit {
+    name = \"nixpkgs-commit\";
+    url = https://github.com/nixos/nixpkgs/;
+    rev = \"$commit\";
+  };
+  in pkgs.outPath
+"
+nixpkgs="$( nix-instantiate --eval -E "$nix_expr" | sed 's/"//g' )"
+export NIX_PATH=nixpkgs="$nixpkgs"
+
+nix-env \
+  -f ./package_sets/"$package_set".nix \
+  -p profiles/"$package_set" \
+  -i \
+  "$@"
