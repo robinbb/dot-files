@@ -2,6 +2,8 @@
 
 set -eu
 
-find . -type d -depth 1 \
-   | sed 's/^..//' \
-   | xargs stow --target=$HOME "$@"
+for stowdir in $( find . -type d -depth 1 | sed 's/^..//' )
+do
+   echo "Stowing $stowdir..."
+   stow --target=$HOME "$stowdir"
+done
