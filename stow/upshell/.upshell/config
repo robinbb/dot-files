@@ -2,5 +2,6 @@
 "$UPSHELL"/modules/xdg
 "$UPSHELL"/modules/nix
 "$UPSHELL"/modules/vim
+"$UPSHELL"/modules/tmux
 "$UPSHELL"/modules/grep
 "$HOME"/.config/upshell
