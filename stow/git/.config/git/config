@@ -1,9 +1,8 @@
 [user]
 	name = Robin Bate Boerop
-	email = me@robinbb.com
-	signingkey = 3261D926125C1863
+	email = robin@engineml.com
 [github]
-	user = robinbb
+	user = robin-engineml
 [color]
 	ui = true
 	diff = true
