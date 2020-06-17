@@ -12,7 +12,9 @@ set -u
 
 git submodule update --init --recursive
 
-for stowdir in $( find . -maxdepth 1 -type d | sed 's/^..//' )
+packages='cvs git hg password-store tmux upshell vim'
+
+for stowdir in $packages
 do
    echo "Stowing $stowdir..."
    stow --target=$HOME "$stowdir"
