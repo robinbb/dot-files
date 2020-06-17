@@ -1,6 +1,14 @@
 #! /bin/sh
 
-set -eu
+set -e
+
+# Avoid warnings from Perl about unset `LC_ALL`.
+#
+if [ -z "$LC_ALL" ]; then
+   export LC_ALL=C
+fi
+
+set -u
 
 git submodule update --init --recursive
 
