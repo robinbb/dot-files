@@ -1,9 +1,20 @@
-To install:
+#! /bin/sh
+#
+#  https://github.com/robinbb/dot-files
+#
+#  This Source Code Form is subject to the terms of the Mozilla Public
+#  License, v. 2.0. If a copy of the MPL was not distributed with this
+#  file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#
+# Install by executing this file!
 
+set -eu
+
+cd
 DOTFILES="$HOME"/dot-files
 git clone --bare https://github.com/robinbb/dot-files.git "$DOTFILES"
-alias dot="git --git-dir="${DOTFILES}"/.git --work-tree=${HOME}"
-dot config --local status.showUntrackedFiles no
+alias dot="git --git-dir="${DOTFILES}" --work-tree=${HOME}"
+( cd "$DOTFILES" && git config --local status.showUntrackedFiles no )
 dot checkout
 
 nix profile install nixpkgs#neovim
