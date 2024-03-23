@@ -1,8 +1,0 @@
-set -eu
-cd "$HOME"
-alias dot="git --git-dir=${HOME}/dot-files/.git --work-tree=${HOME}"
-dot config --local status.showUntrackedFiles no
-dot restore .
-nix profile install nixpkgs#neovim
-nix profile install nixpkgs#starship
-nix profile install nixpkgs#tree

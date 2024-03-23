@@ -1,0 +1,11 @@
+To install:
+
+DOTFILES="$HOME"/dot-files
+git clone --bare https://github.com/robinbb/dot-files.git "$DOTFILES"
+alias dot="git --git-dir="${DOTFILES}"/.git --work-tree=${HOME}"
+dot config --local status.showUntrackedFiles no
+dot checkout
+
+nix profile install nixpkgs#neovim
+nix profile install nixpkgs#starship
+nix profile install nixpkgs#tree
