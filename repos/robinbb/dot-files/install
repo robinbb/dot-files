@@ -1,0 +1,2 @@
+config --local status.showUntrackedFiles no
+nix profile install nixpkgs#neovim
