@@ -1,7 +1,7 @@
 eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
 
-alias dot='git --git-dir="${HOME}"/dot-files/.git --work-tree="${HOME}"'
+alias dot='git --git-dir="${HOME}"/dot-files --work-tree="${HOME}"'
 alias ll='ls -la --color'
 alias vi=nvim
 alias vim=nvim
