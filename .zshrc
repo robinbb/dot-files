@@ -1,5 +1,6 @@
 eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
+eval "$(ssh-agent)"
 
 alias dot='git --git-dir="${HOME}"/dot-files --work-tree="${HOME}"'
 alias ll='ls -la --color'
