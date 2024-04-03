@@ -19,17 +19,11 @@ alias dot="git --git-dir="${DOTFILES}" --work-tree=${HOME}"
 ( cd "$DOTFILES" && git config --local status.showUntrackedFiles no )
 dot checkout
 
-desired_executables='
-  mosh
-  nvim
-  starship
-  tmux
-  tree
-  ripgrep
-'
-IFS=$'\n '
-for bin in $desired_executables
-do
-  printf "%s: " "$bin"
-  command -v "$bin" || echo "not found"
-done
+# Desired packages:
+#
+# mosh
+# nvim
+# starship
+# tmux
+# tree
+# ripgrep
