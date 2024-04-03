@@ -12,11 +12,23 @@ set -eu
 
 cd
 DOTFILES="$HOME"/dot-files
-git clone --bare https://github.com/robinbb/dot-files.git "$DOTFILES"
+if [ ! -e "$DOTFILES" ]; then
+  git clone --bare https://github.com/robinbb/dot-files.git "$DOTFILES"
+fi
 alias dot="git --git-dir="${DOTFILES}" --work-tree=${HOME}"
 ( cd "$DOTFILES" && git config --local status.showUntrackedFiles no )
 dot checkout
 
-nix profile install nixpkgs#neovim
-nix profile install nixpkgs#starship
-nix profile install nixpkgs#tree
+desired_executables='
+  nvim
+  starship
+  tmux
+  tree
+  ripgrep
+'
+IFS=$'\n '
+for bin in $desired_executables
+do
+  printf "%s: " "$bin"
+  command -v "$bin" || echo "not found"
+done
