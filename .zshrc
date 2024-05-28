@@ -20,3 +20,7 @@ compinit
 export HISTSIZE=1234567
 export SAVEHIST=1234567
 setopt EXTENDED_HISTORY
+
+# Work around a deficiency in Nix's 'Mosh'.
+#
+export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
