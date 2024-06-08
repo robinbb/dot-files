@@ -7,8 +7,6 @@ alias ll='ls -la --color'
 alias vi=nvim
 alias vim=nvim
 
-export TERM='tmux-256color'
-
 # Lines configured by zsh-newuser-install
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -24,3 +22,6 @@ setopt EXTENDED_HISTORY
 # Work around a deficiency in Nix's 'Mosh'.
 #
 export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
+
+export EDITOR=nvim
+export TERM='tmux-256color'
