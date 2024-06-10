@@ -21,9 +21,12 @@ dot checkout
 
 # Desired packages:
 #
+# direnv
+# fd
 # mosh
-# nvim
+# neovim
 # starship
 # tmux
 # tree
 # ripgrep
+# zsh

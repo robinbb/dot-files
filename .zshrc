@@ -3,7 +3,7 @@ eval "$(direnv hook zsh)"
 eval "$(ssh-agent)"
 
 alias dot='git --git-dir="${HOME}"/dot-files --work-tree="${HOME}"'
-alias ll='ls -la --color'
+alias ll='ls -latr --color'
 alias vi=nvim
 alias vim=nvim
 
