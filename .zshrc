@@ -4,8 +4,6 @@ eval "$(ssh-agent)"
 
 alias dot='git --git-dir="${HOME}"/dot-files --work-tree="${HOME}"'
 alias ll='ls -latr --color'
-alias vi=nvim
-alias vim=nvim
 
 # Lines configured by zsh-newuser-install
 # End of lines configured by zsh-newuser-install
@@ -23,5 +21,5 @@ setopt EXTENDED_HISTORY
 #
 export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
 
-export EDITOR=nvim
+export EDITOR=vim
 export TERM='tmux-256color'
