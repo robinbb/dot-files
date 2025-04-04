@@ -24,7 +24,6 @@ dot checkout
 # direnv
 # fd
 # mosh
-# neovim
 # starship
 # tmux
 # tree
