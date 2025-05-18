@@ -1,5 +1,5 @@
 alias dot='git --git-dir="${HOME}"/dot-files --work-tree="${HOME}"'
-alias ll='ls -latr --color'
+alias ll='ls -la --color'
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/anon/.zshrc'

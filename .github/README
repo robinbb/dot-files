@@ -1,14 +1,12 @@
 #! /bin/sh
-#
-# https://github.com/robinbb/dot-files
-#
+
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at https://mozilla.org/MPL/2.0/.
-#
-# Install by executing this file!
 
-set -eu
+# https://github.com/robinbb/dot-files
+
+# Install by executing this file!
 
 cd
 DOTFILES="$HOME"/dot-files
