@@ -13,7 +13,8 @@ setopt EXTENDED_HISTORY
 
 # Work around a deficiency in Nix's 'Mosh'.
 #
-export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
+# See if we can do without this.
+# export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
 
 export EDITOR=vim
 export TERM='tmux-256color'
