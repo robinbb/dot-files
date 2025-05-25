@@ -22,7 +22,6 @@ dot checkout
 # direnv
 # fd
 # mosh
-# starship
 # tmux
 # tree
 # ripgrep

@@ -18,6 +18,5 @@ export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
 export EDITOR=vim
 export TERM='tmux-256color'
 
-eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
 eval "$(ssh-agent)"
