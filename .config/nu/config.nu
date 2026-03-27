@@ -4,5 +4,7 @@ alias gs = git status
 alias l = ls -a
 alias ll = ls -al
 
-$env.EDITOR = "vim"
+$env.config.show_banner = false
+
+$env.EDITOR = "nvim"
 $env.TERM = "tmux-256color"
